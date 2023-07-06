@@ -67,8 +67,8 @@ main .card{
     box-shadow: 0 0 50px 15px rgb(47, 255, 47);
 }
 .swiper {
-    width: 1230px;
-    height: 450px;
+    width: 93%;
+    height: 110%;
   }
   
   .swiper-slide {
@@ -81,7 +81,7 @@ main .card{
     max-width: 100%;
     width: 100%;
     border-radius: 20px;
-    object-fit: cover;
+    object-fit: fill;
     height: 100%;
   }
 
@@ -234,5 +234,100 @@ p{
     transition: 0.2s;
 }
 
+@media (min-width: 768px) and (max-width: 1200px) {
+    .swiper{
+        height: 90%;
+        width: 110%;        
+        margin-top: 5rem;
+    }
+    .swiper-slide img{
+        height: 70%;
+        object-fit: fill;
+    }
+    .card{
+        margin-bottom: 20px;
+    }
+    #card{
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 14px;
+    }
+    .icons, .birthday, .location{
+        margin-right: 0px;
+        margin-top: 23px;
+    }
+    .birthday h2{
+        font-size: 15px;
+    }
+    .location h2{
+        font-size: 15px;
+    }
+    .card{
+        margin-bottom: 17;
+    }
+}
+
+@media (min-width: 468px) and (max-width: 767px){
+    .img-gw{
+        visibility: hidden;
+        height: 0%;
+    }
+    main .card{
+        margin-bottom: 20px;
+    }
+    .skills-row{
+        font-size: 15px;
+    }
+    .skills-column{
+        font-size: 12px;
+        width:30%;
+        margin-right: 0;
+    }
+    p{
+        font-size: 12px;
+    }
+    .swiper{
+        height: 50%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 7rem;
+    }
+    .swiper-slide img{
+        height: 100%;
+        object-fit: fill;
+    }
+    .card-content{
+        align-items: center;
+        justify-content: center;
+    }
+    .icons, .birthday, .location{
+        margin-right: 0px;
+        margin-top: 23px;
+    }
+    .birthday h2{
+        font-size: 12px;
+    }
+    .location h2{
+        font-size: 12px;
+    }
+    .card-content{
+        align-items: center;
+        justify-content: center;
+    }
+    .icons{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .fa {
+        font-size: 20px;
+    }
+    .tab-box{
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+        font-size: 12px;
+    }
+}
 
 

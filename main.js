@@ -19,7 +19,7 @@ const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     spaceBetween: 20,
     centeredSlides: true,
-
+    slidesPerView: 'auto',
     loopFillGroupWithBlank: true,
     loop: true,
   
@@ -30,5 +30,11 @@ const swiper = new Swiper('.swiper', {
       prevEl: '.swiper-button-prev',
     },
   
+    breakpoints: {
+      468: {
+        slidesPerView : 1,
+        spaceBetween : 20,
+      }
+    }
 
   });
